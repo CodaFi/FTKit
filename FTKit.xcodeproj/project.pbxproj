@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		841109A417FCB38F009EED29 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841109A317FCB38F009EED29 /* Cocoa.framework */; };
+		841109AE17FCB38F009EED29 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 841109AC17FCB38F009EED29 /* InfoPlist.strings */; };
+		841109B917FCB38F009EED29 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841109B817FCB38F009EED29 /* XCTest.framework */; };
+		841109BA17FCB38F009EED29 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841109A317FCB38F009EED29 /* Cocoa.framework */; };
+		841109BD17FCB38F009EED29 /* FTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841109A017FCB38F009EED29 /* FTKit.framework */; };
+		841109C317FCB38F009EED29 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 841109C117FCB38F009EED29 /* InfoPlist.strings */; };
+		84110A1917FCB46F009EED29 /* fischertechnik.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 841109EC17FCB3CE009EED29 /* fischertechnik.dylib */; };
+		84110A1C17FCB72D009EED29 /* FTSerialConnectionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 84110A1A17FCB72D009EED29 /* FTSerialConnectionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84110A1D17FCB72D009EED29 /* FTSerialConnectionManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84110A1B17FCB72D009EED29 /* FTSerialConnectionManager.mm */; };
+		84110A1F17FCBAA9009EED29 /* FTConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 84110A1E17FCBAA9009EED29 /* FTConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84110A2217FCBD67009EED29 /* FTCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 84110A2017FCBD67009EED29 /* FTCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84110A2317FCBD67009EED29 /* FTCommand.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84110A2117FCBD67009EED29 /* FTCommand.mm */; };
+		84110A2617FCBD83009EED29 /* FTMotorCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 84110A2417FCBD83009EED29 /* FTMotorCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84110A2717FCBD83009EED29 /* FTMotorCommand.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84110A2517FCBD83009EED29 /* FTMotorCommand.mm */; };
+		84110A2A17FCC06E009EED29 /* FTOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 84110A2817FCC06E009EED29 /* FTOutput.h */; };
+		84110A2B17FCC06E009EED29 /* FTOutput.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84110A2917FCC06E009EED29 /* FTOutput.mm */; };
+		84110A2D17FCC37B009EED29 /* FTMotorCommand+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 84110A2C17FCC37B009EED29 /* FTMotorCommand+Private.h */; };
+		84110A2F17FCC905009EED29 /* FTOutput+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 84110A2E17FCC905009EED29 /* FTOutput+Private.h */; };
+		84110A3517FCCEB7009EED29 /* FTKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 84110A3417FCCEB7009EED29 /* FTKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		841109BB17FCB38F009EED29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8411099717FCB38F009EED29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8411099F17FCB38F009EED29;
+			remoteInfo = FTKit;
+		};
+		841109EB17FCB3CE009EED29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 841109E717FCB3CD009EED29 /* fischertechnik.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 841109D717FCB3CD009EED29;
+			remoteInfo = fischertechnik;
+		};
+		84110A1717FCB46A009EED29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 841109E717FCB3CD009EED29 /* fischertechnik.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 841109D617FCB3CD009EED29;
+			remoteInfo = fischertechnik;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		841109A017FCB38F009EED29 /* FTKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FTKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		841109A317FCB38F009EED29 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		841109A617FCB38F009EED29 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		841109A717FCB38F009EED29 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		841109A817FCB38F009EED29 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		841109AB17FCB38F009EED29 /* FTKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FTKit-Info.plist"; sourceTree = "<group>"; };
+		841109AD17FCB38F009EED29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		841109AF17FCB38F009EED29 /* FTKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FTKit-Prefix.pch"; sourceTree = "<group>"; };
+		841109B717FCB38F009EED29 /* FTKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FTKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		841109B817FCB38F009EED29 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		841109C017FCB38F009EED29 /* FTKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FTKitTests-Info.plist"; sourceTree = "<group>"; };
+		841109C217FCB38F009EED29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		841109E717FCB3CD009EED29 /* fischertechnik.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fischertechnik.xcodeproj; path = fischertechnik/fischertechnik.xcodeproj; sourceTree = "<group>"; };
+		84110A1A17FCB72D009EED29 /* FTSerialConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTSerialConnectionManager.h; sourceTree = "<group>"; };
+		84110A1B17FCB72D009EED29 /* FTSerialConnectionManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FTSerialConnectionManager.mm; sourceTree = "<group>"; };
+		84110A1E17FCBAA9009EED29 /* FTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTConstants.h; sourceTree = "<group>"; };
+		84110A2017FCBD67009EED29 /* FTCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCommand.h; sourceTree = "<group>"; };
+		84110A2117FCBD67009EED29 /* FTCommand.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FTCommand.mm; sourceTree = "<group>"; };
+		84110A2417FCBD83009EED29 /* FTMotorCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTMotorCommand.h; sourceTree = "<group>"; };
+		84110A2517FCBD83009EED29 /* FTMotorCommand.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FTMotorCommand.mm; sourceTree = "<group>"; };
+		84110A2817FCC06E009EED29 /* FTOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTOutput.h; sourceTree = "<group>"; };
+		84110A2917FCC06E009EED29 /* FTOutput.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FTOutput.mm; sourceTree = "<group>"; };
+		84110A2C17FCC37B009EED29 /* FTMotorCommand+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTMotorCommand+Private.h"; sourceTree = "<group>"; };
+		84110A2E17FCC905009EED29 /* FTOutput+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTOutput+Private.h"; sourceTree = "<group>"; };
+		84110A3417FCCEB7009EED29 /* FTKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTKit.h; sourceTree = "<group>"; };
+		84110A3717FCD6C5009EED29 /* FTKitTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FTKitTests-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8411099C17FCB38F009EED29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84110A1917FCB46F009EED29 /* fischertechnik.dylib in Frameworks */,
+				841109A417FCB38F009EED29 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841109B417FCB38F009EED29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841109BA17FCB38F009EED29 /* Cocoa.framework in Frameworks */,
+				841109BD17FCB38F009EED29 /* FTKit.framework in Frameworks */,
+				841109B917FCB38F009EED29 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8411099617FCB38F009EED29 = {
+			isa = PBXGroup;
+			children = (
+				841109E717FCB3CD009EED29 /* fischertechnik.xcodeproj */,
+				841109A917FCB38F009EED29 /* FTKit */,
+				841109BE17FCB38F009EED29 /* FTKitTests */,
+				841109A217FCB38F009EED29 /* Frameworks */,
+				841109A117FCB38F009EED29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		841109A117FCB38F009EED29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				841109A017FCB38F009EED29 /* FTKit.framework */,
+				841109B717FCB38F009EED29 /* FTKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		841109A217FCB38F009EED29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				841109A317FCB38F009EED29 /* Cocoa.framework */,
+				841109B817FCB38F009EED29 /* XCTest.framework */,
+				841109A517FCB38F009EED29 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		841109A517FCB38F009EED29 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				841109A617FCB38F009EED29 /* Foundation.framework */,
+				841109A717FCB38F009EED29 /* CoreData.framework */,
+				841109A817FCB38F009EED29 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		841109A917FCB38F009EED29 /* FTKit */ = {
+			isa = PBXGroup;
+			children = (
+				84110A3417FCCEB7009EED29 /* FTKit.h */,
+				84110A1E17FCBAA9009EED29 /* FTConstants.h */,
+				84110A1A17FCB72D009EED29 /* FTSerialConnectionManager.h */,
+				84110A1B17FCB72D009EED29 /* FTSerialConnectionManager.mm */,
+				84110A2017FCBD67009EED29 /* FTCommand.h */,
+				84110A2117FCBD67009EED29 /* FTCommand.mm */,
+				84110A2417FCBD83009EED29 /* FTMotorCommand.h */,
+				84110A2517FCBD83009EED29 /* FTMotorCommand.mm */,
+				84110A3617FCD54B009EED29 /* Private */,
+				841109AA17FCB38F009EED29 /* Supporting Files */,
+			);
+			path = FTKit;
+			sourceTree = "<group>";
+		};
+		841109AA17FCB38F009EED29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				841109AB17FCB38F009EED29 /* FTKit-Info.plist */,
+				841109AC17FCB38F009EED29 /* InfoPlist.strings */,
+				841109AF17FCB38F009EED29 /* FTKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		841109BE17FCB38F009EED29 /* FTKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				841109BF17FCB38F009EED29 /* Supporting Files */,
+			);
+			path = FTKitTests;
+			sourceTree = "<group>";
+		};
+		841109BF17FCB38F009EED29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				841109C017FCB38F009EED29 /* FTKitTests-Info.plist */,
+				841109C117FCB38F009EED29 /* InfoPlist.strings */,
+				84110A3717FCD6C5009EED29 /* FTKitTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		841109E817FCB3CD009EED29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				841109EC17FCB3CE009EED29 /* fischertechnik.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84110A3617FCD54B009EED29 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				84110A2817FCC06E009EED29 /* FTOutput.h */,
+				84110A2917FCC06E009EED29 /* FTOutput.mm */,
+				84110A2E17FCC905009EED29 /* FTOutput+Private.h */,
+				84110A2C17FCC37B009EED29 /* FTMotorCommand+Private.h */,
+			);
+			name = Private;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8411099D17FCB38F009EED29 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84110A3517FCCEB7009EED29 /* FTKit.h in Headers */,
+				84110A2617FCBD83009EED29 /* FTMotorCommand.h in Headers */,
+				84110A2217FCBD67009EED29 /* FTCommand.h in Headers */,
+				84110A1C17FCB72D009EED29 /* FTSerialConnectionManager.h in Headers */,
+				84110A1F17FCBAA9009EED29 /* FTConstants.h in Headers */,
+				84110A2F17FCC905009EED29 /* FTOutput+Private.h in Headers */,
+				84110A2A17FCC06E009EED29 /* FTOutput.h in Headers */,
+				84110A2D17FCC37B009EED29 /* FTMotorCommand+Private.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8411099F17FCB38F009EED29 /* FTKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841109C817FCB38F009EED29 /* Build configuration list for PBXNativeTarget "FTKit" */;
+			buildPhases = (
+				8411099B17FCB38F009EED29 /* Sources */,
+				8411099C17FCB38F009EED29 /* Frameworks */,
+				8411099D17FCB38F009EED29 /* Headers */,
+				8411099E17FCB38F009EED29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84110A1817FCB46A009EED29 /* PBXTargetDependency */,
+			);
+			name = FTKit;
+			productName = FTKit;
+			productReference = 841109A017FCB38F009EED29 /* FTKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		841109B617FCB38F009EED29 /* FTKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 841109CB17FCB38F009EED29 /* Build configuration list for PBXNativeTarget "FTKitTests" */;
+			buildPhases = (
+				841109B317FCB38F009EED29 /* Sources */,
+				841109B417FCB38F009EED29 /* Frameworks */,
+				841109B517FCB38F009EED29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				841109BC17FCB38F009EED29 /* PBXTargetDependency */,
+			);
+			name = FTKitTests;
+			productName = FTKitTests;
+			productReference = 841109B717FCB38F009EED29 /* FTKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8411099717FCB38F009EED29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = CodaFi;
+				TargetAttributes = {
+					841109B617FCB38F009EED29 = {
+						TestTargetID = 8411099F17FCB38F009EED29;
+					};
+				};
+			};
+			buildConfigurationList = 8411099A17FCB38F009EED29 /* Build configuration list for PBXProject "FTKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8411099617FCB38F009EED29;
+			productRefGroup = 841109A117FCB38F009EED29 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 841109E817FCB3CD009EED29 /* Products */;
+					ProjectRef = 841109E717FCB3CD009EED29 /* fischertechnik.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8411099F17FCB38F009EED29 /* FTKit */,
+				841109B617FCB38F009EED29 /* FTKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		841109EC17FCB3CE009EED29 /* fischertechnik.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = fischertechnik.dylib;
+			remoteRef = 841109EB17FCB3CE009EED29 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8411099E17FCB38F009EED29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841109AE17FCB38F009EED29 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841109B517FCB38F009EED29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841109C317FCB38F009EED29 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8411099B17FCB38F009EED29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84110A2B17FCC06E009EED29 /* FTOutput.mm in Sources */,
+				84110A1D17FCB72D009EED29 /* FTSerialConnectionManager.mm in Sources */,
+				84110A2717FCBD83009EED29 /* FTMotorCommand.mm in Sources */,
+				84110A2317FCBD67009EED29 /* FTCommand.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		841109B317FCB38F009EED29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		841109BC17FCB38F009EED29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8411099F17FCB38F009EED29 /* FTKit */;
+			targetProxy = 841109BB17FCB38F009EED29 /* PBXContainerItemProxy */;
+		};
+		84110A1817FCB46A009EED29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = fischertechnik;
+			targetProxy = 84110A1717FCB46A009EED29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		841109AC17FCB38F009EED29 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				841109AD17FCB38F009EED29 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		841109C117FCB38F009EED29 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				841109C217FCB38F009EED29 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		841109C617FCB38F009EED29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		841109C717FCB38F009EED29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		841109C917FCB38F009EED29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FTKit/FTKit-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/fischertechnik/fischertechnik\"",
+				);
+				INFOPLIST_FILE = "FTKit/FTKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		841109CA17FCB38F009EED29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FTKit/FTKit-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/fischertechnik/fischertechnik\"",
+				);
+				INFOPLIST_FILE = "FTKit/FTKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		841109CC17FCB38F009EED29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FTKit.framework/Versions/A/FTKit";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FTKitTests/FTKitTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FTKitTests/FTKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		841109CD17FCB38F009EED29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FTKit.framework/Versions/A/FTKit";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FTKitTests/FTKitTests-Prefix.pch";
+				INFOPLIST_FILE = "FTKitTests/FTKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8411099A17FCB38F009EED29 /* Build configuration list for PBXProject "FTKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841109C617FCB38F009EED29 /* Debug */,
+				841109C717FCB38F009EED29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		841109C817FCB38F009EED29 /* Build configuration list for PBXNativeTarget "FTKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841109C917FCB38F009EED29 /* Debug */,
+				841109CA17FCB38F009EED29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		841109CB17FCB38F009EED29 /* Build configuration list for PBXNativeTarget "FTKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				841109CC17FCB38F009EED29 /* Debug */,
+				841109CD17FCB38F009EED29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8411099717FCB38F009EED29 /* Project object */;
+}
